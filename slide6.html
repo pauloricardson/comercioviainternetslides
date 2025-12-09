@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pesquise a reputação antes de comprar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+        }
+
+        .slide-container {
+            width: 100vw;
+            min-height: 100vh;
+            background-color: #ffffff;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .brand-stripe {
+            width: 20px;
+            height: 100%;
+            background-color: #003366;
+            /* Azul Institucional Escuro */
+            flex-shrink: 0;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 60px 80px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .title-accent {
+            width: 60px;
+            height: 6px;
+            background-color: #00aaff;
+            /* Azul Ciano */
+            margin-bottom: 15px;
+            border-radius: 3px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 60px;
+            flex: 1;
+            align-items: flex-start;
+        }
+
+        .list-section {
+            flex: 1.3;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #003366;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s ease;
+        }
+
+        .icon-wrapper {
+            width: 50px;
+            height: 50px;
+            background-color: #e0f2fe;
+            color: #0055aa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .visual-section {
+            flex: 0.7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .visual-card {
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+
+        .visual-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .stat-bubble {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            border-left: 4px solid #10b981;
+            /* Green emphasis for positive advice */
+        }
+
+        .nav-footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            gap: 5px;
+            z-index: 999;
+        }
+
+        .nav-btn {
+            padding: 5px 10px;
+            background-color: #0033664a;
+            color: #ffffff;
+            border-radius: 10px;
+            font-weight: 100;
+            transition: 0.2s;
+            text-decoration: none;
+        }
+
+        .nav-btn:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container shadow-2xl">
+        <!-- Faixa Lateral -->
+        <div class="brand-stripe"></div>
+        <!-- Conteúdo Principal -->
+        <div class="main-content">
+            <!-- Cabeçalho -->
+            <div class="header">
+                <div class="title-accent"></div>
+                <h2 class="text-5xl font-bold text-gray-900 mb-3">Pesquise a reputação antes de comprar</h2>
+                <p class="text-xl text-gray-600 font-light max-w-3xl">
+                    Conhecer a credibilidade de um site ou vendedor é fundamental para evitar golpes. Dedique alguns
+                    minutos para investigar antes de comprar.
+                </p>
+            </div>
+            <div class="content-wrapper">
+                <!-- Lista de Itens -->
+                <div class="list-section">
+                    <!-- Item 1 -->
+                    <div class="list-item">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Consulte o Procon</h3>
+                            <p class="text-gray-600 text-base leading-relaxed">
+                                Verifique nas listas do Procon se a empresa possui reclamações graves ou consta em
+                                cadastros negativos. Sites oficiais dos órgãos de defesa do consumidor mantêm registros
+                                de empresas não recomendadas.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="list-item">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Verifique reclamações online</h3>
+                            <p class="text-gray-600 text-base leading-relaxed">
+                                Busque por reclamações em sites especializados (como Reclame Aqui) e redes sociais.
+                                Empresas legítimas geralmente respondem e buscam resolver os problemas dos clientes.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="list-item">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Leia avaliações recentes</h3>
+                            <p class="text-gray-600 text-base leading-relaxed">
+                                Priorize as avaliações mais recentes de outros compradores, pois refletem a situação
+                                atual da empresa. Desconfie de lojas só com avaliações positivas ou que tenham muitas
+                                avaliações idênticas.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="list-item">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Observe a solução de problemas</h3>
+                            <p class="text-gray-600 text-base leading-relaxed">
+                                Veja como a empresa lida com reclamações. O importante não é apenas o índice de
+                                satisfação, mas a capacidade de resolver problemas rapidamente quando eles surgem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seção Visual -->
+                <div class="visual-section">
+                    <div class="visual-card">
+                        <img alt="Pesquisa de reputação e avaliações em e-commerce"
+                            src="https://page.gensparksite.com/slides_images/9ce25ab3dc9bfc7a38198c2f4026a525.webp" />
+                        <div class="stat-bubble">
+                            <div class="flex items-center text-green-600 mb-1">
+                                <i class="fas fa-lightbulb mr-2"></i>
+                                <span class="font-bold text-sm uppercase tracking-wide">Dica Importante</span>
+                            </div>
+                            <p class="text-sm text-gray-700 font-medium">
+                                Boas empresas online têm CNPJ verificável, canais de contato claros e políticas de
+                                devolução transparentes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-footer">
+        <a href="slide5.html" class="nav-btn"><i class="fas fa-arrow-left"></i></a>
+        <a href="slide7.html" class="nav-btn"><i class="fas fa-arrow-right"></i></a>
+    </div>
+</body>
+
+</html>

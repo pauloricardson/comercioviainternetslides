@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Formas de pagamento: prós e cuidados</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+        }
+
+        .slide-container {
+            width: 100vw;
+            min-height: 100vh;
+            background-color: #ffffff;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .brand-stripe {
+            width: 20px;
+            height: 100%;
+            background-color: #003366;
+            flex-shrink: 0;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 50px 70px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 15px;
+        }
+
+        .title-accent {
+            width: 60px;
+            height: 6px;
+            background-color: #00aaff;
+            margin-bottom: 15px;
+            border-radius: 3px;
+        }
+
+        .columns-container {
+            display: flex;
+            flex: 1;
+            gap: 40px;
+        }
+
+        .col-card {
+            flex: 1;
+            border-radius: 16px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .col-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .col-do {
+            background-color: #f0fdf4;
+            /* Green-50 */
+            border: 1px solid #dcfce7;
+        }
+
+        .col-dont {
+            background-color: #fef2f2;
+            /* Red-50 */
+            border: 1px solid #fee2e2;
+        }
+
+        .item-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .item-icon {
+            margin-top: 4px;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+
+        .store-badges {
+            display: flex;
+            gap: 15px;
+            margin-top: auto;
+            padding-top: 20px;
+            opacity: 0.8;
+        }
+
+        .store-badge {
+            height: 40px;
+            background-color: #1f2937;
+            color: white;
+            border-radius: 8px;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .nav-footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            gap: 5px;
+            z-index: 999;
+        }
+
+        .nav-btn {
+            padding: 5px 10px;
+            background-color: #0033664a;
+            color: #ffffff;
+            border-radius: 10px;
+            font-weight: 100;
+            transition: 0.2s;
+            text-decoration: none;
+        }
+
+        .nav-btn:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container shadow-2xl">
+        <div class="brand-stripe"></div>
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="title-accent"></div>
+                <h2 class="text-5xl font-bold text-gray-900 mb-2">Formas de pagamento: prós e cuidados</h2>
+                <p class="text-xl text-gray-500 font-light">Escolha o meio de pagamento correto pode determinar seu
+                    nível de proteção caso algo dê errado.</p>
+            </div>
+            <!-- Columns -->
+            <div class="columns-container">
+                <!-- Column: MAIS INDICADAS -->
+                <div class="col-card col-do shadow-sm">
+                    <div class="col-header text-green-800">
+                        <div
+                            class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-4 text-green-600">
+                            <i class="fas fa-shield-alt text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">MAIS INDICADAS</h3>
+                            <p class="text-sm opacity-75">Maior proteção ao comprador</p>
+                        </div>
+                    </div>
+                    <div class="item-list">
+                        <div class="list-item text-green-900">
+                            <i class="fas fa-credit-card item-icon text-green-600"></i>
+                            <div>
+                                <p class="font-bold text-lg mb-1">Cartão virtual e intermediadores</p>
+                                <p class="text-gray-600 leading-snug">Geram números temporários que podem ser
+                                    inutilizados após a compra e oferecem sistema de contestação caso o produto não seja
+                                    entregue.</p>
+                            </div>
+                        </div>
+                        <div class="list-item text-green-900">
+                            <i class="fas fa-qrcode item-icon text-green-600"></i>
+                            <div>
+                                <p class="font-bold text-lg mb-1">Pix com conferência rigorosa</p>
+                                <p class="text-gray-600 leading-snug">Verificando nome/CPF/CNPJ do destinatário antes da
+                                    transação, e usando apenas QR codes gerados em sites ou apps oficiais da loja.</p>
+                            </div>
+                        </div>
+                        <div class="list-item text-green-900">
+                            <i class="fas fa-shopping-cart item-icon text-green-600"></i>
+                            <div>
+                                <p class="font-bold text-lg mb-1">Plataformas com garantia</p>
+                                <p class="text-gray-600 leading-snug">Marketplaces com sistema de pagamento integrado
+                                    que retém o valor até confirmação de entrega oferecem camada extra de segurança.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store-badges">
+                        <div class="store-badge">
+                            <i class="fas fa-user-shield mr-2"></i> Proteção ao Comprador
+                        </div>
+                    </div>
+                </div>
+                <!-- Column: EXIGEM MAIS CAUTELA -->
+                <div class="col-card col-dont shadow-sm">
+                    <div class="col-header text-red-800">
+                        <div
+                            class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mr-4 text-red-600">
+                            <i class="fas fa-exclamation-triangle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">EXIGEM MAIS CAUTELA</h3>
+                            <p class="text-sm opacity-75">Menos recursos de segurança</p>
+                        </div>
+                    </div>
+                    <div class="item-list">
+                        <div class="list-item text-red-900">
+                            <i class="fas fa-exchange-alt item-icon text-red-600"></i>
+                            <div>
+                                <p class="font-bold text-lg mb-1">Transferência direta sem proteção</p>
+                                <p class="text-gray-600 leading-snug">Transferências bancárias tradicionais não possuem
+                                    mecanismo de contestação e são praticamente irreversíveis após confirmação.</p>
+                            </div>
+                        </div>
+                        <div class="list-item text-red-900">
+                            <i class="fas fa-file-invoice item-icon text-red-600"></i>
+                            <div>
+                                <p class="font-bold text-lg mb-1">Boleto por link/mensagem</p>
+                                <p class="text-gray-600 leading-snug">Boletos recebidos via links ou mensagens podem ser
+                                    falsificados, direcionando o pagamento para criminosos em vez do vendedor legítimo.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-item text-red-900">
+                            <i class="fas fa-hand-holding-usd item-icon text-red-600"></i>
+                            <div>
+                                <p class="font-bold text-lg mb-1">Pagamentos sem comprovante</p>
+                                <p class="text-gray-600 leading-snug">Depósitos em dinheiro, pagamentos ao entregador ou
+                                    métodos sem geração automática de comprovante dificultam a comprovação em disputas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-footer">
+        <a href="slide17.html" class="nav-btn"><i class="fas fa-arrow-left"></i></a>
+        <a href="slide19.html" class="nav-btn"><i class="fas fa-arrow-right"></i></a>
+    </div>
+</body>
+
+</html>

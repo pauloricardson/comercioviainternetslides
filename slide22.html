@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Checklist do Vendedor Responsável</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+        }
+
+        .slide-container {
+            width: 100vw;
+            min-height: 100vh;
+            background-color: #ffffff;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .brand-stripe {
+            width: 20px;
+            height: 100%;
+            background-color: #003366;
+            /* Azul Institucional Escuro */
+            flex-shrink: 0;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 50px 80px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 20px;
+        }
+
+        .title-accent {
+            width: 60px;
+            height: 6px;
+            background-color: #00aaff;
+            /* Azul Ciano */
+            margin-bottom: 15px;
+            border-radius: 3px;
+        }
+
+        /* Checklist specific styles */
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            flex: 1;
+        }
+
+        .checklist-card {
+            background-color: #f8fafc;
+            border-left: 6px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .checklist-card.priority {
+            border-left-color: #00aaff;
+            background-color: #f0f9ff;
+        }
+
+        .check-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            border: 2px solid #00aaff;
+            color: #00aaff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+            font-size: 18px;
+        }
+
+        .checklist-card.priority .check-circle {
+            background-color: #00aaff;
+            color: #ffffff;
+        }
+
+        .card-content h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Footer tip */
+        .tip-box {
+            margin-top: 30px;
+            background-color: #fffbeb;
+            border: 1px solid #fcd34d;
+            border-radius: 8px;
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            color: #92400e;
+        }
+        .nav-footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            gap: 5px;
+            z-index: 999;
+        }
+
+        .nav-btn {
+            padding: 5px 10px;
+            background-color: #0033664a;
+            color: #ffffff;
+            border-radius: 10px;
+            font-weight: 100;
+            transition: 0.2s;
+            text-decoration: none;
+        }
+
+        .nav-btn:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container shadow-2xl">
+        <!-- Faixa Lateral -->
+        <div class="brand-stripe"></div>
+        <!-- Conteúdo Principal -->
+        <div class="main-content">
+            <!-- Cabeçalho -->
+            <div class="header">
+                <div class="title-accent"></div>
+                <h2 class="text-5xl font-bold text-gray-900 mb-2">Checklist do vendedor responsável</h2>
+                <p class="text-xl text-gray-500 font-light">Boas práticas para oferecer uma experiência segura e
+                    confiável aos compradores.</p>
+            </div>
+            <!-- Grid de Checklist -->
+            <div class="checklist-grid">
+                <!-- Item 1 -->
+                <div class="checklist-card priority">
+                    <div class="check-circle">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Venda apenas pela plataforma</h3>
+                        <p>Realize toda a negociação, comunicação e transações dentro da plataforma. Evite desviar a
+                            conversa para canais externos como WhatsApp ou e-mail.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="checklist-card priority">
+                    <div class="check-circle">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Especifique políticas claras</h3>
+                        <p>Detalhe suas políticas de entrega, troca e devolução de forma transparente na descrição do
+                            produto ou em sua página de perfil.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="checklist-card">
+                    <div class="check-circle">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Publicação honesta e completa</h3>
+                        <p>Use apenas fotos reais dos produtos e forneça descrições detalhadas, incluindo possíveis
+                            defeitos ou limitações.</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="checklist-card">
+                    <div class="check-circle">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Confirme o pagamento</h3>
+                        <p>Envie o produto somente após a confirmação do pagamento pela plataforma. Verifique se o valor
+                            já está disponível em sua conta ou painel.</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="checklist-card">
+                    <div class="check-circle">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Guarde comprovantes</h3>
+                        <p>Mantenha todos os comprovantes de envio e códigos de rastreio. Compartilhe estas informações
+                            com o comprador logo após o despacho.</p>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="checklist-card">
+                    <div class="check-circle">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Desconfie de pedidos atípicos</h3>
+                        <p>Fique atento a solicitações fora do fluxo normal, como entregas em endereços diferentes,
+                            pagamentos parciais ou por meios não oficiais.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Dica de Rodapé -->
+            <div class="tip-box">
+                <i class="fas fa-lightbulb text-yellow-500 text-xl mr-3"></i>
+                <p class="font-medium">Dica: Mantenha boa reputação respondendo rapidamente às dúvidas e resolvendo
+                    problemas com agilidade. Avaliações positivas aumentam suas vendas futuras.</p>
+            </div>
+        </div>
+    </div>
+    <div class="nav-footer">
+        <a href="slide21.html" class="nav-btn"><i class="fas fa-arrow-left"></i></a>
+        <a href="slide23.html" class="nav-btn"><i class="fas fa-arrow-right"></i></a>
+    </div>
+</body>
+
+</html>

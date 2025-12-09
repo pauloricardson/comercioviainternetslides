@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Não recebeu produto/pagamento? O que fazer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+        }
+
+        .slide-container {
+            width: 100vw;
+            min-height: 100vh;
+            background-color: #ffffff;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .brand-stripe {
+            width: 20px;
+            height: 100%;
+            background-color: #003366;
+            /* Azul Institucional Escuro */
+            flex-shrink: 0;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 50px 80px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 20px;
+        }
+
+        .title-accent {
+            width: 60px;
+            height: 6px;
+            background-color: #00aaff;
+            /* Azul Ciano */
+            margin-bottom: 15px;
+            border-radius: 3px;
+        }
+
+        /* Estilo dos Cards de Passo */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .step-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            transition: transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+            border-color: #cbd5e1;
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 32px;
+            height: 32px;
+            background-color: #003366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            border: 4px solid #ffffff;
+        }
+
+        .step-icon {
+            font-size: 40px;
+            color: #00aaff;
+            margin: 20px 0 15px 0;
+        }
+
+        .step-title {
+            font-weight: 700;
+            color: #1e293b;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .step-desc {
+            color: #64748b;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Caixa de Alerta Inferior */
+        .alert-box {
+            background-color: #fff4f4;
+            border-left: 6px solid #ef4444;
+            padding: 20px 30px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .alert-icon {
+            color: #ef4444;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+        .nav-footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            gap: 5px;
+            z-index: 999;
+        }
+
+        .nav-btn {
+            padding: 5px 10px;
+            background-color: #0033664a;
+            color: #ffffff;
+            border-radius: 10px;
+            font-weight: 100;
+            transition: 0.2s;
+            text-decoration: none;
+        }
+
+        .nav-btn:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container shadow-2xl">
+        <!-- Faixa Lateral -->
+        <div class="brand-stripe"></div>
+        <!-- Conteúdo Principal -->
+        <div class="main-content">
+            <!-- Cabeçalho -->
+            <div class="header">
+                <div class="title-accent"></div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-2">Não recebeu produto/pagamento? O que fazer</h2>
+                <p class="text-xl text-gray-500 font-light">Passos importantes para resolver problemas na sua compra ou
+                    venda online.</p>
+            </div>
+            <!-- Grid de Passos -->
+            <div class="steps-grid">
+                <!-- Passo 1 -->
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="step-title">Contate a Plataforma</h3>
+                    <p class="step-desc">
+                        Entre em contato com o site ou plataforma responsável pela compra/venda através dos canais
+                        oficiais de atendimento.
+                    </p>
+                </div>
+                <!-- Passo 2 -->
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="step-title">Registre Reclamação</h3>
+                    <p class="step-desc">
+                        Se necessário, recorra ao Procon de sua região ou sites especializados em reclamações como
+                        Reclame Aqui ou consumidor.gov.br.
+                    </p>
+                </div>
+                <!-- Passo 3 -->
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="step-title">Faça Boletim de Ocorrência</h3>
+                    <p class="step-desc">
+                        Em casos de fraude confirmada, registre um B.O. online ou presencial para documentar o ocorrido
+                        e ter um registro oficial.
+                    </p>
+                </div>
+                <!-- Passo 4 -->
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3 class="step-title">Busque Apoio Jurídico</h3>
+                    <p class="step-desc">
+                        Quando o problema persistir, avalie a possibilidade de acionar o Juizado Especial Cível ou
+                        consultar um advogado especializado.
+                    </p>
+                </div>
+            </div>
+            <!-- Alerta Final -->
+            <div class="alert-box">
+                <div class="alert-icon">
+                    <i class="fas fa-receipt"></i>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-red-800 mb-1">Guarde Todas as Evidências</h4>
+                    <p class="text-gray-700 text-sm">
+                        Mantenha prints das conversas, anúncios, comprovantes de pagamento e envio, emails e protocolos
+                        de atendimento. Essa documentação é essencial para comprovar seu caso em todas as instâncias.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-footer">
+        <a href="slide19.html" class="nav-btn"><i class="fas fa-arrow-left"></i></a>
+        <a href="slide21.html" class="nav-btn"><i class="fas fa-arrow-right"></i></a>
+    </div>
+</body>
+
+</html>
